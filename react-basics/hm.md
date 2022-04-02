@@ -7,6 +7,7 @@
 - [Компоненты и пропсы](https://ru.reactjs.org/docs/components-and-props.html)
 - [Условный рендеринг](https://ru.reactjs.org/docs/conditional-rendering.html)
 - [Списки и ключи](https://ru.reactjs.org/docs/lists-and-keys.html)
+- [Фрагменты](https://ru.reactjs.org/docs/fragments.html)
 - [Философия React. Шаги 1 - 2](https://ru.reactjs.org/docs/thinking-in-react.html)
 
 ## Подготовить проект

@@ -23,7 +23,7 @@ interface Good {
 
 interface GoodsSearch {
   ids: string; // exmaple ids=1,2,3
-  categoryTypeIds: string; // exmaple categoryTypeIds=1,2,3
+  categoryTypeIds: string; // example categoryTypeIds=1,2,3
   minPrice: number;
   maxPrice: number;
   text: string;
@@ -36,7 +36,7 @@ interface GoodsSearch {
 
 | pathname                | method | response                                    | search                                                      |
 | ----------------------- | :----: | ------------------------------------------- | ----------------------------------------------------------- |
-| /api/categories         | GET    | { categories: Category[] }                  | ids: string - id категорий // exmaple ids=1,2,3             |
+| /api/categories         | GET    | { categories: Category[] }                  | ids: string - id категорий // example ids=1,2,3             |
 | /api/popular_categories | GET    | { category: Category; items: Good[] }       |                                                             |
 | /api/goods              | GET    | { items: Good[]; total: number }            | GoodsSearch                                                 |
 

@@ -4,6 +4,42 @@ DRAFT
 ## File Structure
 TBD
 
+## API
+```typescript
+interface Category {
+  id: string;
+  type: string;
+  label: string;
+}
+
+interface Good {
+  categoryTypeId: string;
+  description: string;
+  id: string;
+  img: string;
+  label: string;
+  price: string;
+}
+
+interface GoodsSearch {
+  ids: string; // exmaple ids=1,2,3
+  categoryTypeIds: string; // exmaple categoryTypeIds=1,2,3
+  minPrice: number;
+  maxPrice: number;
+  text: string;
+  limit: number; // default 20
+  offset: number;
+  sortBy: keyof Good; // default id
+  sortDirection: 'asc' | 'desc'; // default asc
+}
+```
+
+| pathname                | method | response                                    | search                                                      |
+| ----------------------- | :----: | ------------------------------------------- | ----------------------------------------------------------- |
+| /api/categories         | GET    | { categories: Category[] }                  | ids: string - id категорий // exmaple ids=1,2,3             |
+| /api/popular_categories | GET    | { category: Category; items: Good[] }       |                                                             |
+| /api/goods              | GET    | { items: Good[]; total: number }            | GoodsSearch                                                 |
+
 ## Base
 1. Создать в отдельном репозитории проект с помощью `create-react-app --template typescript` (если не уверены в своих силах, можно делать на js)
 2. Убедиться, что в проекте настроены абсолютный импорты (TBD: приложит пример)

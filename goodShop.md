@@ -55,7 +55,7 @@ offest=40&limit=20 - выбрать 20 товаров пропустив пер�
 | /api/popular_categories | GET      | -                                   | { category: Category; items: Good[] }                     |                                                             |
 | /api/goods              | GET      | -                                   | { items: Good[]; total: number }                          | GoodsSearch                                                 |
 | /api/login              | POST     | { login: string; password: string } | { login: string; token: string }                          |                                                             |
-| /api/registration       | POST     | { login: string; password: string } | { user: { login: string; password: string; id: string } } |                                                             |
+| /api/registration       | POST     | { login: string; password: string } | { user: {} } |                                                             |
 | /api/cart               | GET      | -                                   | GoodInCart[]                                              |                                                             |
 | /api/cart               | PUT      | GoodInCart                          | GoodInCart[]                                              |                                                             |                             |
 
